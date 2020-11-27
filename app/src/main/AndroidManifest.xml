@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.projetointegrador">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".telas.TelaCadLogin"></activity>
+        <activity android:name=".telas.TelaCadFornecedor" />
+        <activity android:name=".telas.TelaCadLancamento" />
+        <activity android:name=".telas.TelaRelatorio" />
+        <activity
+            android:name=".telas.TelaCadCategoria"
+            android:label="Registrar categoria" />
+        <activity android:name=".telas.TelaPrincipal" />
+        <activity
+            android:name=".telas.TelaCategoria"
+            android:label="Categoria" />
+        <activity
+            android:name=".telas.TelaFornecedor"
+            android:label="Fornecedor" />
+        <activity
+            android:name=".telas.TelaLancamento"
+            android:label="Lançamentos" />
+        <activity android:name=".telas.TelaLogin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
